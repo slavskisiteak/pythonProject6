@@ -1,0 +1,998 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="uk" class="page">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Курс медитативних практик «Відкриття глибинного ресурсу»</title>
+
+    <link rel="icon" type="image/x-icon" href="./img/ icon.ico" />
+    <link rel="stylesheet" href="{% static '/style.css' %}" />
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <div class="nav-bar">
+          <i class="bx bx-menu sidebarOpen"></i>
+          <span class="logo navLogo">
+            <a href="/">
+              <img class="logo__img" src="{% static 'img/logo.png' %}" alt="Compassion & Wisdom in Ukraine" />
+
+            </a>
+          </span>
+
+          <div class="menu">
+            <div class="logo-toggle">
+              <span class="logo"><a href="#"></a></span>
+              <i class="bx bx-x siderbarClose"></i>
+            </div>
+
+            <ul class="nav-links">
+              <li><a href="#home">Чим ми допоможемо?</a></li>
+              <li><a href="#about-us">Хто ми? Команда проекту</a></li>
+              <li><a href="#details">Подробиці про онлайн курс</a></li>
+              <li><a href="#reviews">Відгуки після курсу</a></li>
+              <li><a href="#about-course--children">Що ми пропонуємо для дітей?</a></li>
+              <li><a href="#live">Які заходи ми організуємо вживу?</a></li>
+              <li><a href="#footer">Контакти</a></li>
+              <li>
+                <a class="button_support" href="mailto:compassionandwisdomukraine@gmail.com">
+                  <span class="item__buttonspan"> Підтримати проєкт </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="button_container">
+            <a class="item__button" href="/login">
+              <span class="item__buttonspan"> Реєстрація </span>
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container_header">
+        <h1 class="header__title">
+          Курс медитативних практик<br />
+          «Відкриття глибинного ресурсу»
+        </h1>
+
+        <a class="item__button button__join" href="/login">
+          <span class="item__buttonspan">Реєстрація</span>
+        </a>
+
+        <a class="scroll" href="#home">
+          <svg class="arrows">
+            <path class="a1" d="M0 0 L30 32 L60 0"></path>
+            <path class="a2" d="M0 20 L30 52 L60 20"></path>
+            <path class="a3" d="M0 40 L30 72 L60 40"></path>
+          </svg>
+        </a>
+      </div>
+    </header>
+
+    <section class="home section-container" id="home">
+      <div class="section__quote">
+        <h1 class="margin-top">Проєкт підтримки українських біженців</h1>
+
+        <h1 class="section__quote-blue">
+          Команда фонду<br />
+          «Compassion and Wisdom»
+        </h1>
+      </div>
+
+      <div class="section__personal">
+        <div class="section__quote-personal--img"></div>
+        <h3 class="section__quote-personal">
+          Люди в Україні роблять цю практику, найчастіше сидячи в бомбосховищі -
+          що неймовірно складно навіть уявити. І вони кажуть, що відчувають, як
+          практика корисна для їхнього життя.
+        </h3>
+      </div>
+
+      <p class="section__text">
+        <span
+          >Це прості у виконанні і доступні кожному медитативні техніки, які не
+          мають аналогів.</span
+        >
+      </p>
+      <p class="section__text">
+        Курс розроблено на базі унікальної 5-ти частинної практики, створеної і
+        розробленої для підтримки українців Фасилітатором Фонду розвитку
+        співчуття та мудрості (FDCW – ФРСМ) на прохання українських фахівців,
+        які надають психологічну допомогу біженцям та тимчасово переміщеним.
+      </p>
+    </section>
+
+    <section class="about-course section-container" id="about-course">
+      <div class="section__quote">
+        <h1 class="margin-top">Про курс</h1>
+        <span></span>
+      </div>
+
+      <div class="section__container">
+        <p class="section__text">
+          Курс медитативних практик
+          <span>«Відкриття глибинного ресурсу»</span> спрямованих на те, щоб
+          впоратися з:
+        </p>
+        <div class="section__text--container">
+          <ul class="section__list">
+            <li class="section__item">
+              <div class="number">1</div>
+              <p class="section__text content">
+                Почуттям втрати перспективи та внутрішньої опори
+              </p>
+            </li>
+
+            <li class="section__item">
+              <div class="number">2</div>
+              <p class="section__text content">
+                Зі станом страху щодо майбутнього
+              </p>
+            </li>
+
+            <li class="section__item">
+              <div class="number">3</div>
+              <p class="section__text content">
+                Зі станом безсилля щось робити
+              </p>
+            </li>
+
+            <li class="section__item">
+              <div class="number">4</div>
+              <p class="section__text content">
+                Зі станом безсилля вирішувати життєві завдання у сьогоднішніх
+                реаліях
+              </p>
+            </li>
+          </ul>
+          <img class="section__text--img" src="{% static 'img/photo/about-course_war.jpg' %}" alt="Pобота з травмою у контексті
+
+        </div>
+      </div>
+
+      <div class="section__container">
+        <p class="section__text">
+          Це робота з травмою у контексті воєнного часу та зниження ризику
+          виникнення наслідків гострого стресу та ПТСР.
+        </p>
+      </div>
+    </section>
+
+    <section class="results section-container" id="results">
+      <div class="section__quote">
+        <h1 class="margin-top">Що ви отримаєте?</h1>
+        <span></span>
+      </div>
+
+      <p class="section__text">
+        Наприкінці проходження курсу ви отримаєте подвійний результат + техніки
+        для самостійної внутрішньої роботи та допомоги собі та іншим.
+      </p>
+
+      <div class="section__container">
+        <div class="section__text--and-icon">
+          <div class="section__icon">🌿</div>
+          <p class="section__text">
+            Результати внутрішні, пов'язані з оновленим внутрішнім станом:
+          </p>
+        </div>
+
+        <div class="section__text--container">
+          <ul class="section__list">
+            <li class="section__item">
+              <div class="number">✔️</div>
+              <p class="section__text content">
+                налагодиться глибокий і спокійний сон
+              </p>
+            </li>
+
+            <li class="section__item">
+              <div class="number">✔️</div>
+              <p class="section__text content">
+                знизиться рівень тривожності, занепокоєння та страху
+              </p>
+            </li>
+
+            <li class="section__item">
+              <div class="number">✔️</div>
+              <p class="section__text content">
+                знайдемо навички, як впоратися з негативними емоціями
+              </p>
+            </li>
+
+            <li class="section__item">
+              <div class="number">✔️</div>
+              <p class="section__text content">
+                знизиться вплив стресу на фізичному та емоційному рівні
+              </p>
+            </li>
+
+            <li class="section__item">
+              <div class="number">✔️</div>
+              <p class="section__text content">
+                підвищиться рівень внутрішнього спокою та врівноваженості
+              </p>
+            </li>
+          </ul>
+          <img class="section__text--img" src="{% static 'img/photo/results1.jpg' %}" alt="Pобота з травмою у контексті воєнного часу" />
+
+        </div>
+      </div>
+
+      <div class="section__container">
+        <div class="section__text--and-icon">
+          <div class="section__icon">🌿</div>
+          <p class="section__text">
+            Результати зовнішні, які пов'язані із зовнішніми подіями, справами
+            та особистим життям
+          </p>
+        </div>
+
+        <div class="section__text--container">
+          <ul class="section__list">
+            <li class="section__item">
+              <div class="number">✔️</div>
+              <p class="section__text content">
+                навчитеся вирішувати складні життєві завдання спокійніше,
+                дбайливо та легко
+              </p>
+            </li>
+
+            <li class="section__item">
+              <div class="number">✔️</div>
+              <p class="section__text content">
+                зможете знову побачити сенс життя в кожному новому дні та в
+                перспективі у цілому
+              </p>
+            </li>
+
+            <li class="section__item">
+              <div class="number">✔️</div>
+              <p class="section__text content">
+                дізнаєтесь, як «перетворити» енергію найбільш кризових
+                контекстів життя на нові ідеї та можливості
+              </p>
+            </li>
+
+            <li class="section__item">
+              <div class="number">✔️</div>
+              <p class="section__text content">
+                знайдете усвідомлення, що є справжнім джерелом конфліктів та
+                зіпсованих відносин із близькими людьми. Зможете відновити
+                стосунки з людьми через деякі внутрішні зміни у собі.
+              </p>
+            </li>
+          </ul>
+          <img class="section__text--img" src="{% static 'img/photo/results2.jpg' %}" alt="Pобота з травмою у контексті воєнного часу"/>
+        </div>
+      </div>
+
+      <div class="section__container">
+        <div class="section__text--and-icon">
+          <div class="section__icon">🌿</div>
+          <p class="section__text">
+            Також, як результат роботи на курсі ви зможете спокійно просунутися
+            у вирішенні ваших реальних життєвих завдань, тому що всі тренування
+            та практичні сесії ви виконуватимете на актуальних для вас проблемах
+            та життєвих завданнях.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="techniques section-container" id="techniques">
+      <div class="section__quote">
+        <h1 class="margin-top">Техніки медитації</h1>
+        <span></span>
+      </div>
+
+      <div class="section__container">
+        <div class="section__text--and-icon">
+          <div class="section__icon">🧘🏼‍♀️</div>
+          <p class="section__text">
+            4 техніки сучасної науково обґрунтованої медитації:
+          </p>
+        </div>
+
+        <div class="section__text--container">
+          <ul class="section__list">
+            <li class="section__item">
+              <div class="number">1</div>
+              <div class="content">
+                <p class="section__text content">
+                  <span>Медитативна практика «Глибокий та здоровий сон»</span>
+                </p>
+                <p class="section__text description">
+                  Дозволяє подолати безсоння та досягти якісного спокійного та
+                  мирного сну.
+                </p>
+              </div>
+            </li>
+
+            <li class="section__item">
+              <div class="number">2</div>
+              <div class="content">
+                <p class="section__text content">
+                  <span
+                    >Медитація «Зниження фізичного та емоційного стресу»</span
+                  >
+                </p>
+                <p class="section__text description">
+                  Регулярне виконання цієї практики значно знижує ризик
+                  виникнення ПТСР і допомагає впоратися з негативними емоціями.
+                </p>
+              </div>
+            </li>
+
+            <li class="section__item">
+              <div class="number">3</div>
+              <div class="content">
+                <p class="section__text content">
+                  <span>Медитація «Розслаблення та внутрішній спокій»</span>
+                </p>
+                <p class="section__text description">
+                  З'явиться більше врівноваженості, внутрішнього спокою та
+                  відчуття опори.
+                </p>
+              </div>
+            </li>
+
+            <li class="section__item">
+              <div class="number">4</div>
+              <div class="content">
+                <p class="section__text content">
+                  <span>Техніка "Емоційне благополуччя"</span>
+                </p>
+                <p class="section__text description">
+                  Регулярна практика дозволяє розкрити доступ до джерела
+                  натхнення та радості всередині себе як до сили, яка допомагає
+                  долати будь-які складнощі. З'явиться більше впевненості у
+                  житті та завтрашньому дні. Збільшиться концентрація та
+                  уважність.
+                </p>
+              </div>
+            </li>
+          </ul>
+          <img class="section__text--img" src="{% static 'img/photo/children/1.JPG' %}" alt="Pобота з травмою у контексті воєнного часу" />
+
+        </div>
+      </div>
+    </section>
+
+    <section class="about-us section-container" id="about-us">
+      <div class="section__quote">
+        <h1 class="margin-top">Про нас</h1>
+        <span></span>
+      </div>
+
+      <div class="slider slider1">
+        <div class="swiper swiper1">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" id="slide1">
+              <div class="swiper-content">
+                <img class="swiper-img" src="{% static 'img/photo/team/5.jpg' %}" alt="Team member" />
+
+                <h2 class="swiper-title">Ірина Бойченко</h2>
+
+                <p class="swiper-location">
+                  (Україна, Київ)
+                </p>
+                
+                <p class="swiper-text">
+                  <span>Фасілітатор.</span>
+                  Дипломований психолог, сертифікований психолог КПТ, сертифікований викладач практик усвідомленості mindfulness, співорганізатор та керівник центру Life in Flow.
+                </p>
+                <a class="read-more" href="about-us#1"> Читати далі </a>
+              </div>
+            </div>
+
+            <div class="swiper-slide" id="slide2">
+              <div class="swiper-content">
+                <img class="swiper-img" src="{% static 'img/photo/team/1.jpg' %}" alt="Team member" />
+
+                <h2 class="swiper-title">Інесса Славські</h2>
+
+                <p class="swiper-location">
+                  (Україна - Німеччина, Нюрнберг)
+                </p>
+                
+                <p class="swiper-text">
+                  <span>Фасілітатор.</span>
+                  Студентка TIBET HOUSE NALANDA MASTERS COURSE Культурного Центру Його Святійшества Далай Лами
+                </p>
+                <a class="read-more" href="about-us#2"> Читати далі </a>
+              </div>
+            </div>
+
+            <div class="swiper-slide" id="slide5">
+              <div class="swiper-content">
+                <img class="swiper-img" src="{% static 'img/photo/team/4.jpg' %}" alt="Team member" />
+
+                <h2 class="swiper-title">Юлія Григор'єва</h2>
+
+                <p class="swiper-location">
+                  (Гамбург, Німеччина)
+                </p>
+                
+                <p class="swiper-text">
+                  <span>Консультант.</span>
+                  Дипломований психолог, стаж 20 років, психотерапевт у системному підході, спеціалізація по роботі з психічною травматизацією та  вигорянням (burn out).
+                </p>
+                <a class="read-more" href="about-us#5"> Читати далі </a>
+              </div>
+            </div>
+
+            <div class="swiper-slide" id="slide4">
+              <div class="swiper-content">
+                <img class="swiper-img" src="{% static 'img/photo/team/9.jpg' %}" alt="Team member" />
+
+                <h2 class="swiper-title">Шапіро Діана</h2>
+                
+                <p class="swiper-text">
+                  <span>Фасілітатор.</span>
+                  Вже більше 3х років проводить заняття з малювання у форматі Діти-Дітям на різноманітних заходах, та на зустрічах українців у Німеччині.
+                </p>
+                <a class="read-more" href="about-us#4"> Читати далі </a>
+              </div>
+            </div>
+
+            <div class="swiper-slide" id="slide6">
+              <div class="swiper-content">
+                <img class="swiper-img" src="{% static 'img/photo/team/3.jpg' %}" alt="Team member" />
+
+                <h2 class="swiper-title">Валерій Миронов</h2>
+
+                <p class="swiper-location">
+                  (Дніпро, Україна)
+                </p>
+                
+                <p class="swiper-text">
+                  <span>Консультант.</span>
+                  Доктор психологічних наук. Практикуючий психолог, 30 років психотерапевтичної практики. Психологія інтелекту та креативності.
+                </p>
+                <a class="read-more" href="about-us#6"> Читати далі </a>
+              </div>
+            </div>
+
+            <div class="swiper-slide" id="slide3">
+              <div class="swiper-content">
+                <img class="swiper-img" src="{% static 'img/photo/team/2.jpg' %}" alt="Team member" />
+
+                <h2 class="swiper-title">Маргарита Кожевнікова</h2>
+                
+                <p class="swiper-text">
+                  <span>Фасілітатор.</span>
+                  Філософ, автор та викладач освітніх курсів, вчитель медитації, фасилітатор ФРСМ (FDCW)
+                </p>
+                <a class="read-more" href="about-us#3"> Читати далі </a>
+              </div>
+            </div>
+
+            <div class="swiper-slide" id="slide7">
+              <div class="swiper-content">
+                <img class="swiper-img" src="{% static 'img/photo/team/7.jpg' %}" alt="Team member" />
+
+                <h2 class="swiper-title">Сергій Яновский</h2>
+
+                <p class="swiper-location">
+                  (Україна, Дніпро)
+                </p>
+                
+                <p class="swiper-text">
+                  <span>Волонтер.</span>
+                  Займався розробкою веб-сайту для благодійної організації як розробник бекенду на Python. Я сам є українцем, тому мені важливо допомагати людям з моєї спільноти. 
+                </p>
+                <a class="read-more" href="about-us#7"> Читати далі </a>
+              </div>
+            </div>
+
+            <div class="swiper-slide" id="slide8">
+              <div class="swiper-content">
+                <img class="swiper-img" src="{% static 'img/photo/team/8.jpg' %}" alt="Team member" />
+
+                <h2 class="swiper-title">Вероніка Кондратова</h2>
+
+                <p class="swiper-location">
+                  (Україна, Київ)
+                </p>
+                
+                <p class="swiper-text">
+                  <span>Волонтер.</span>
+                  Займалася розробкою (Frontend) та тестуванням (QA) веб-сайту. Розробка для благодійної організації - це мій внесок у психологічний розвиток української нації.
+                </p>
+                <a class="read-more" href="about-us#8"> Читати далі </a>
+              </div>
+            </div>
+
+            <div class="swiper-slide" id="slide9">
+              <div class="swiper-content">
+                <img class="swiper-img" src="{% static 'img/photo/team/6.jpg' %}" alt="Team member" />
+
+
+                <h2 class="swiper-title">
+                  Катерина Стороженко
+                </h2>
+
+                <p class="swiper-location">
+                  (Україна – Бельгія)
+                </p>
+                
+                <p class="swiper-text">
+                  <span>Волонтер.</span>
+                  За освітою я – викладач англійської та іспанської мов, за покликанням – викладач йоги. Веду заняття з 2016 року, але також продовжую навчатися у вибраному напрямку.
+                </p>
+                <a class="read-more" href="about-us#9"> Читати далі </a>
+              </div>
+            </div>
+
+            <div class="swiper-slide" id="slide10">
+              <div class="swiper-content">
+                <img class="swiper-img" src="{% static 'img/photo/team/13.jpg' %}" alt="Team member" />
+
+                <h2 class="swiper-title">Оксана Захарченко</h2>
+
+                <p class="swiper-location">
+                  (Україна, Київ)
+                </p>
+                
+                <p class="swiper-text">
+                  <span>Волонтер.</span>
+                  Сертифікований викладач з йоги, один з організаторів ретриту Віпассана в Україні. Йогою займаюсь вже більше 8 років, викладаю йогу - більше 6 років.
+                </p>
+                <a class="read-more" href="about-us#10"> Читати далі </a>
+              </div>
+            </div>
+
+            <div class="swiper-slide" id="slide11">
+              <div class="swiper-content">
+                <img class="swiper-img" src="{% static 'img/photo/team/10.jpg' %}" alt="Team member" />
+
+                <h2 class="swiper-title">Альона Ларіна</h2>
+
+                <p class="swiper-location">
+                  (Україна, Київ)
+                </p>
+                
+                <p class="swiper-text">
+                  <span>Волонтер.</span>
+                  Я - художниця родом з Дніпра, зараз проживаю у Києві. Якщо більш детально розбирати мою професію, то я- тату майстриня, фріланс ілюстраторка та пишу полотна маслом.
+                </p>
+                <a class="read-more" href="about-us#11"> Читати далі </a>
+              </div>
+            </div>
+
+            <div class="swiper-slide" id="slide12">
+              <div class="swiper-content">
+                <img class="swiper-img" src="{% static 'img/photo/team/11.jpg' %}" alt="Team member" />
+
+                <h2 class="swiper-title">Ірина Зарицька</h2>
+
+                <p class="swiper-location">
+                  (Україна, Бровари – Німеччина, Нюрнберг)
+                </p>
+                
+                <p class="swiper-text">
+                  <span>Волонтер.</span>
+                  Учасниця курсу TIBET HOUSE NALANDA MASTERS COURSE Культурного Центру Його Святійшества Далай Лами.
+                </p>
+                <a class="read-more" href="about-us#12"> Читати далі </a>
+              </div>
+            </div>
+
+            <div class="swiper-slide" id="slide13">
+              <div class="swiper-content">
+                <img class="swiper-img" src="{% static 'img/photo/team/12.jpg' %}" alt="Team member" />
+
+                <h2 class="swiper-title">Анастасія Плетена</h2>
+
+                <p class="swiper-location">
+                  (Україна – Німеччина, Нюрнберг)
+                </p>
+                
+                <p class="swiper-text">
+                  <span>Волонтер.</span>
+                  Приймала участь у волонтерському проекті та допомагала в організації таборів з участю українських дітей для покращення їх соціалізації у новому суспільстві.
+                </p>
+                <a class="read-more" href="about-us#13"> Читати далі </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-pagination swiper-pagination1"></div>
+
+        <div class="swiper-button-prev swiper-button-prev1"></div>
+        <div class="swiper-button-next swiper-button-next1"></div>
+      </div>
+    </section>
+
+    <section class="details section-container" id="details">
+      <div class="section__quote">
+        <h1 class="margin-top">Подробиці про онлайн курс</h1>
+        <span></span>
+      </div>
+
+      <p class="section__text">
+        Ми регулярно відкриваємо нові набори до груп, тому приєднуйтесь до чату
+        і ми проінформуємо Вас про початок.
+      </p>
+
+      <div class="section__container">
+        <div class="section__text--and-icon">
+          <div class="section__icon">🔔</div>
+          <p class="section__text">Як проходитимуть заняття на курсі:</p>
+        </div>
+
+        <div class="section__text--container">
+          <ul class="section__list">
+            <li class="section__item">
+              <div class="number">✔️</div>
+
+              <p class="section__text content">
+                <span
+                  >Це 7 онлайн зустрічей кожні 4 -7 днів тривалістю 1,5-2
+                  години</span
+                >
+              </p>
+            </li>
+
+            <li class="section__item">
+              <div class="number">✔️</div>
+
+              <p class="section__text content">
+                <span
+                  >Додаткові підтримувальні практики 1 раз на тиждень тривалістю
+                  15-20 хв</span
+                >
+              </p>
+            </li>
+
+            <li class="section__item">
+              <div class="number">✔️</div>
+
+              <p class="section__text content">
+                <span>Щоденник відстеження внутрішнього стану.</span>
+              </p>
+            </li>
+
+            <li class="section__item">
+              <div class="number">✔️</div>
+
+              <p class="section__text content">
+                <span>Заняття безкоштовні</span>
+              </p>
+            </li>
+          </ul>
+
+          <img class="section__text--img" src="{% static 'img/photo/details.jpg' %}" alt="Pобота з травмою у контексті воєнного часу" />
+
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews section-container" id="reviews">
+      <div class="section__quote">
+        <h1 class="margin-top">Відгуки</h1>
+        <span></span>
+      </div>
+
+      <div class="slider slider2">
+        <div class="swiper swiper2">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="swiper-content">
+                <div class="swiper-zoom-container">
+                <img class="reviews-swiper-img" src="{% static 'img/photo/reviews/1.jpg' %}" alt="Team member" />
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="swiper-content">
+                <div class="swiper-zoom-container">
+                <img class="section__text--img" src="{% static '/img/photo/about-course_war.jpg' %}" alt="Pобота з травмою у контексті воєнного часу" />
+
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="swiper-content">
+                <div class="swiper-zoom-container">
+                <img class="reviews-swiper-img" src="{% static 'img/photo/reviews/3.jpg' %}" alt="Team member" />
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="swiper-content">
+                <div class="swiper-zoom-container">
+                <img class="reviews-swiper-img" src="{% static 'img/photo/reviews/4.jpg' %}" alt="Team member" />
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="swiper-content">
+                <div class="swiper-zoom-container">
+                <img class="reviews-swiper-img" src="{% static 'img/photo/reviews/5.jpg' %}" alt="Team member" />
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="swiper-content">
+                <div class="swiper-zoom-container">
+                <img class="reviews-swiper-img" src="{% static 'img/photo/reviews/6.jpg' %}" alt="Team member" />
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="swiper-content">
+                <div class="swiper-zoom-container">
+                <img class="reviews-swiper-img" src="{% static 'img/photo/reviews/8.jpg' %}" alt="Team member" />
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="swiper-content">
+                <div class="swiper-zoom-container">
+                <img class="reviews-swiper-img" src="{% static 'img/photo/reviews/9.jpg' %}" alt="Team member" />
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="swiper-content">
+                <div class="swiper-zoom-container">
+                <img class="reviews-swiper-img" src="{% static 'img/photo/reviews/10.jpg' %}" alt="Team member" />
+                </div>
+              </div>
+            </div>
+            
+            <div class="swiper-slide">
+              <div class="swiper-content">
+                <div class="swiper-zoom-container">
+                <img class="reviews-swiper-img" src="{% static 'img/photo/reviews/11.jpg' %}" alt="Team member" />
+                </div>
+              </div>
+            </div>
+            
+            <div class="swiper-slide">
+              <div class="swiper-content">
+                <div class="swiper-zoom-container">
+                <img class="reviews-swiper-img" src="{% static 'img/photo/reviews/12.jpg' %}" alt="Team member" />
+                </div>
+              </div>
+            </div>
+            
+            <div class="swiper-slide">
+              <div class="swiper-content">
+                <div class="swiper-zoom-container">
+                <img class="reviews-swiper-img" src="{% static 'img/photo/reviews/13.jpg' %}" alt="Team member" />
+                </div>
+              </div>
+            </div>
+            
+            <div class="swiper-slide">
+              <div class="swiper-content">
+                <div class="swiper-zoom-container">
+                <img class="reviews-swiper-img" src="{% static 'img/photo/reviews/14.jpg' %}" alt="Team member" />
+                </div>
+              </div>
+            </div>
+            
+            <div class="swiper-slide">
+              <div class="swiper-content">
+                <div class="swiper-zoom-container">
+                <img class="reviews-swiper-img" src="{% static 'img/photo/reviews/15.jpg' %}" alt="Team member" />
+                </div>
+              </div>
+            </div>
+            
+            <div class="swiper-slide">
+              <div class="swiper-content">
+                <div class="swiper-zoom-container">
+                <img class="reviews-swiper-img" src="{% static 'img/photo/reviews/18.jpg' %}" alt="Team member" />
+                </div>
+              </div>
+            </div>
+            
+            <div class="swiper-slide">
+              <div class="swiper-content">
+                <div class="swiper-zoom-container">
+                <img class="reviews-swiper-img" src="{% static 'img/photo/reviews/17.jpg' %}" alt="Team member" />
+                </div>
+              </div>
+            </div>
+            
+            <div class="swiper-slide">
+              <div class="swiper-content">
+                <div class="swiper-zoom-container">
+                <img class="reviews-swiper-img" src="{% static 'img/photo/reviews/18.jpg' %}" alt="Team member" />
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-pagination swiper-pagination2"></div>
+
+        <div class="swiper-button-prev swiper-button-prev2"></div>
+        <div class="swiper-button-next swiper-button-next2"></div>
+      </div>
+    </section>
+
+    <section class="about-course--children section-container" id="about-course--children">
+      <div class="section__quote">
+        <h1 class="margin-top">Що ми пропонуємо для дітей?</h1>
+        <span></span>
+      </div>
+  
+      <div class="section__container">
+        <div class="section__text--container">
+          <div>
+            <p class="section__text description">
+              Батьки, які шукають цікаві та корисні заняття для своїх дітей, можуть ознайомитися з нашою сторінкою 
+              <a href="/children" class="team__links" target="_blank">
+                «Для дітей»
+              </a>.
+              Тут ви дізнаєтеся про унікальну форму занять, яка дозволить вашим дітям розвивати свою творчість та комунікативні здібності в компанії однолітків. Адже саме в такому форматі діти найкраще вчаться, розвиваються та знаходять своє місце в світі мистецтва.
+            </p>
+          </div>
+  
+          <img class="section__text--img img__team" src="{% static 'img/photo/for_children.jpg' %}" alt="Заняття без участі дорослого" />
+
+        </div>
+      </div>
+    </section>
+
+    <section class="live section-container" id="live">
+      <div class="section__quote">
+        <h1 class="margin-top">Які заходи ми організуємо вживу?</h1>
+        <span></span>
+      </div>
+  
+      <div class="section__container">
+        <div class="section__text--container">
+          <div>
+            <p class="section__text description">
+              Опис готується
+            </p>
+          </div>
+  
+          <img class="section__text--img img__team" src="{% static 'img/photo/children/1.JPG' %}" alt="Заняття без участі дорослого" />
+
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer" id="footer">
+      <div class="footer__logo">
+        <span class="logo logoFooter">
+          <a href="/">
+            <img class="logo__img" src="{% static 'img/logo.png' %}" alt="Compassion & Wisdom in Ukraine" />
+
+          </a>
+        </span>
+      </div>
+  
+      <ul class="footer__nav">
+        <li class="nav__item">
+          <h2 class="nav__title">Загальна інформація</h2>
+      
+          <ul class="nav__ul">
+            <li>
+              <a href="#home">Чим ми допоможемо?</a>
+            </li>
+      
+            <li>
+              <a href="#about-us">Хто ми? Команда проєкту</a>
+            </li>
+      
+            <li>
+              <a href="#details">Подробиці про онлайн курс</a>
+            </li>
+      
+            <li>
+              <a href="#reviews">Відгуки після курсу</a>
+            </li>
+      
+            <li>
+              <a href="#about-course--children">Що ми пропонуємо для дітей?</a>
+            </li>
+      
+            <li>
+              <a href="#live">Які заходи ми організуємо вживу?</a>
+            </li>
+          </ul>
+        </li>
+      
+      
+        <li class="nav__item">
+          <h2 class="nav__title">Для дітей</h2>
+      
+          <ul class="nav__ul">
+            <li>
+              <a href="/children#about-course--children">Формат занять</a>
+            </li>
+      
+            <li>
+              <a href="/children#gallery">Галерея</a>
+            </li>
+
+            <li>
+              <a href="/children#reviews">Відгуки</a>
+            </li>
+          </ul>
+        </li>
+  
+        <li class="nav__item">
+          <h2 class="nav__title">Про нас</h2>
+      
+          <ul class="nav__ul">
+            <li>
+              <a href="/about-us.html#facilitators">Фасілітатори курсу</a>
+            </li>
+      
+            <li>
+              <a href="/about-us.html#consultants">Консультанти курсу</a>
+            </li>
+
+            <li>
+              <a href="/about-us.html#volunteers">Волонтери курсу</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+  
+      <div class="legal">
+        <p>Copyright &copy; 2023 Compassion & Wisdom in Ukraine</p>
+  
+        <ul class="social-icons">
+          <li class="social-icon">
+            <a target="_blank" class="website" href="https://www.compassionandwisdom.org/blog/2023/3/14/compassion-and-wisdom-in-ukraine-1-year-on">
+              <i class='bx bx-globe bx-sm'></i>
+            </a>
+          </li>
+  
+          <li class="social-icon">
+            <a target="_blank" class="facebook" href="https://fb.me/e/17R0UUNzs">
+              <i class="bx bxl-facebook-circle bx-sm"></i>
+            </a>
+          </li>
+  
+          <li class="social-icon">
+            <a target="_blank" class="telegram" href="https://t.me/+LSo0INqJHkhjNDcy?fbclid=IwAR0erq9PTM5CxzLaXb3Va5Ae62K7Kxl6WMpT_AfP4oUaLAvlV2W7qEDxIwI">
+              <i class='bx bxl-telegram bx-sm'></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="{% static 'script.js' %}"></script>
+
+    <script src="{% static '/style.css' %}"></script>
+  </body>
+</html>

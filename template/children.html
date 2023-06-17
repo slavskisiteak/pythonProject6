@@ -1,0 +1,415 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="uk" class="page">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Для дітей</title>
+
+  <link rel="icon" type="image/x-icon" href="./img/ icon.ico" />
+  <link rel="stylesheet" href='{% static "./style.css" %}' />
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+
+</head>
+
+<body class="children__body">
+  <nav>
+    <div class="nav-bar">
+      <i class="bx bx-menu sidebarOpen"></i>
+      <span class="logo navLogo">
+        <a href="/">
+          <img class="logo__img" src='{% static "./img/logo.png" %}' alt="Compassion & Wisdom in Ukraine" />
+        </a>
+      </span>
+
+      <div class="menu">
+        <div class="logo-toggle">
+          <span class="logo"><a href="#"></a></span>
+          <i class="bx bx-x siderbarClose"></i>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="/">На головну</a></li>
+          <li><a href="/#about-course--children">Формат занять</a></li>
+          <li><a href="/children/#gallery">Галерея</a></li>
+        </ul>
+      </div>
+
+      <a class="item__button" href="/login">
+        <span class="item__buttonspan"> Реєстрація </span>
+      </a>
+    </div>
+  </nav>
+
+  <section class="about-course--children section-container" id="about-course--children">
+    <div class="section__quote">
+      <h1 class="margin-top">Намалюй мрію</h1>
+      <span></span>
+    </div>
+
+    <div class="section__container">
+      <div class="section__text--container">
+        <div class="children__text--container">
+          <p class="section__text description">
+            <span>Формат занять: Діти-Дітям</span>
+          </p>
+
+          <p class="section__text description">
+            Ці заняття дуже відрізняються від звичайних, адже веде їх
+            <a href="./about-us.html#4" class="team__links">
+              «юний викладач»
+            </a>.
+          </p>
+
+          <p class="section__text description">
+            Така форма занять добре зарекомендувала себе і практикується кілька років (у тому числі на базі деяких шкіл
+            в Україні та онлайн по Світу)
+          </p>
+        </div>
+
+        <img class="section__text--img img__team" src='{% static "./img/photo/children/1.JPG" %}'
+          alt="Заняття без участі дорослого" />
+      </div>
+    </div>
+
+    <div class="section__container">
+      <div class="section__text--container">
+        <div class="children__text--container">
+          <p class="section__text description">
+            У рамках таких занять діти малюють, ліплять, займаються прикладною творчістю та просто приємно проводять час у компанії однолітків.
+          </p>
+
+          <p class="section__text description">
+            Саме такий формат занять без участі дорослого вчителя/наставника допомагає відволіктися дитині, поспілкуватись у
+            невимушеній обстановці та, водночас, з користю та цікаво провести час, та ще набути нових знань та навичок
+          </p>
+        </div>
+
+        <img class="section__text--img img__team" src='{% static "./img/photo/for_children.jpg" %}'
+          alt="Заняття без участі дорослого" />
+      </div>
+    </div>
+  </section>
+
+
+  <section class="gallery section-container" id="gallery">
+    <div class="section__quote">
+      <h1 class="margin-top">Галерея</h1>
+      <span></span>
+    </div>
+
+    <div class="slider slider3">
+      <div class="swiper swiper3">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="swiper-content">
+              <div class="swiper-zoom-container">
+              <img
+                class="reviews-swiper-img"
+                src='{% static "./img/photo/children/13.jpg" %}'
+                alt="Малюнок з занять"
+              />
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="swiper-content">
+              <div class="swiper-zoom-container">
+              <img
+                class="reviews-swiper-img"
+                src='{% static "./img/photo/children/14.jpg" %}'
+                alt="Малюнок з занять"
+              />
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="swiper-content">
+              <div class="swiper-zoom-container">
+              <img
+                class="reviews-swiper-img"
+                src='{% static "./img/photo/children/15.jpg" %}'
+                alt="Малюнок з занять"
+              />
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="swiper-content">
+              <div class="swiper-zoom-container">
+              <img
+                class="reviews-swiper-img"
+                src='{% static "./img/photo/children/3.jpg" %}'
+                alt="Малюнок з занять"
+              />
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="swiper-content">
+              <div class="swiper-zoom-container">
+              <img
+                class="reviews-swiper-img"
+                src='{% static "./img/photo/children/3.jpg" %}'
+                alt="Малюнок з занять"
+              />
+              </div>
+            </div>
+          </div>
+  
+          <div class="swiper-slide">
+            <div class="swiper-content">
+              <div class="swiper-zoom-container">
+              <img
+                class="reviews-swiper-img"
+                src='{% static "./img/photo/children/4.jpg" %}'
+                alt="Малюнок з занять"
+              />
+              </div>
+            </div>
+          </div>
+  
+          <div class="swiper-slide">
+            <div class="swiper-content">
+              <div class="swiper-zoom-container">
+              <img
+                class="reviews-swiper-img"
+                src='{% static "./img/photo/children/5.jpg" %}'
+                alt="Малюнок з занять"
+              />
+              </div>
+            </div>
+          </div>
+  
+          <div class="swiper-slide">
+            <div class="swiper-content">
+              <div class="swiper-zoom-container">
+              <img
+                class="reviews-swiper-img"
+                src='{% static "./img/photo/children/6.jpg" %}'
+                alt="Малюнок з занять"
+              />
+              </div>
+            </div>
+          </div>
+  
+          <div class="swiper-slide">
+            <div class="swiper-content">
+              <div class="swiper-zoom-container">
+              <img
+                class="reviews-swiper-img"
+                src='{% static "./img/photo/children/7.jpg" %}'
+                alt="Малюнок з занять"
+              />
+              </div>
+            </div>
+          </div>
+  
+          <div class="swiper-slide">
+            <div class="swiper-content">
+              <div class="swiper-zoom-container">
+              <img
+                class="reviews-swiper-img"
+                src='{% static "./img/photo/children/9.jpg" %}'
+                alt="Малюнок з занять"
+              />
+              </div>
+            </div>
+          </div>
+  
+          <div class="swiper-slide">
+            <div class="swiper-content">
+              <div class="swiper-zoom-container">
+              <img
+                class="reviews-swiper-img"
+                src='{% static "./img/photo/children/10.jpg" %}'
+                alt="Малюнок з занять"
+              />
+              </div>
+            </div>
+          </div>
+  
+          <div class="swiper-slide">
+            <div class="swiper-content">
+              <div class="swiper-zoom-container">
+              <img
+                class="reviews-swiper-img"
+                src='{% static "./img/photo/children/11.jpg" %}'
+                alt="Малюнок з занять"
+              />
+              </div>
+            </div>
+          </div>
+  
+          <div class="swiper-slide">
+            <div class="swiper-content">
+              <div class="swiper-zoom-container">
+              <img
+                class="reviews-swiper-img"
+                src='{% static "./img/photo/children/12.jpg" %}'
+                alt="Малюнок з занять"
+              />
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+  
+      <div class="swiper-pagination swiper-pagination2"></div>
+  
+      <div class="swiper-button-prev swiper-button-prev2"></div>
+      <div class="swiper-button-next swiper-button-next2"></div>
+    </div>
+  </section>
+
+  <section class="reviews section-container" id="reviews">
+    <div class="section__quote">
+      <h1 class="margin-top">Відгуки</h1>
+      <span></span>
+    </div>
+
+    <div class="slider slider2">
+      <div class="swiper swiper2">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="swiper-content">
+              <div class="swiper-zoom-container">
+              <img
+                class="reviews-swiper-img"
+                src='{% static "./img/photo/reviews/19.jpg" %}'
+                alt="Team member"
+              />
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="swiper-pagination swiper-pagination"></div>
+
+      <div class="swiper-button-prev swiper-button-prev"></div>
+      <div class="swiper-button-next swiper-button-next"></div>
+    </div>
+  </section>
+
+  <footer class="footer" id="footer">
+    <div class="footer__logo">
+      <span class="logo logoFooter">
+        <a href="/">
+          <img class="logo__img" src='{% static "./img/logo.png" %}' alt="Compassion & Wisdom in Ukraine" />
+        </a>
+      </span>
+    </div>
+
+    <ul class="footer__nav">
+      <li class="nav__item">
+        <h2 class="nav__title">Загальна інформація</h2>
+    
+        <ul class="nav__ul">
+          <li>
+            <a href="/#home">Чим ми допоможемо?</a>
+          </li>
+    
+          <li>
+            <a href="/#about-us">Хто ми? Команда проєкту</a>
+          </li>
+    
+          <li>
+            <a href="/#details">Подробиці про онлайн курс</a>
+          </li>
+    
+          <li>
+            <a href="/#reviews">Відгуки після курсу</a>
+          </li>
+    
+          <li>
+            <a href="/#about-course--children">Що ми пропонуємо для дітей?</a>
+          </li>
+    
+          <li>
+            <a href="/#live">Які заходи ми організуємо вживу?</a>
+          </li>
+        </ul>
+      </li>
+    
+    
+      <li class="nav__item">
+        <h2 class="nav__title">Для дітей</h2>
+    
+        <ul class="nav__ul">
+          <li>
+            <a href="/children/#about-course--children">Формат занять</a>
+          </li>
+    
+          <li>
+            <a href="/children/#gallery">Галерея</a>
+          </li>
+
+          <li>
+            <a href="/children/#reviews">Відгуки</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="nav__item">
+        <h2 class="nav__title">Про нас</h2>
+    
+        <ul class="nav__ul">
+          <li>
+            <a href="/about-us.html#facilitators">Фасілітатори курсу</a>
+          </li>
+
+          <li>
+            <a href="/about-us.html#consultants">Консультанти курсу</a>
+          </li>
+
+          <li>
+            <a href="/about-us.html#volunteers">Волонтери курсу</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <div class="legal">
+      <p>Copyright &copy; 2023 Compassion & Wisdom in Ukraine</p>
+
+      <ul class="social-icons">
+        <li class="social-icon">
+          <a target="_blank" class="website" href="https://www.compassionandwisdom.org/blog/2023/3/14/compassion-and-wisdom-in-ukraine-1-year-on">
+            <i class='bx bx-globe bx-sm'></i>
+          </a>
+        </li>
+
+        <li class="social-icon">
+          <a target="_blank" class="facebook" href="https://fb.me/e/17R0UUNzs">
+            <i class="bx bxl-facebook-circle bx-sm"></i>
+          </a>
+        </li>
+
+        <li class="social-icon">
+          <a target="_blank" class="telegram" href="https://t.me/+LSo0INqJHkhjNDcy?fbclid=IwAR0erq9PTM5CxzLaXb3Va5Ae62K7Kxl6WMpT_AfP4oUaLAvlV2W7qEDxIwI">
+            <i class='bx bxl-telegram bx-sm'></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src='{% static "./script.js" %}'></script>
+</body>
+
+</html>

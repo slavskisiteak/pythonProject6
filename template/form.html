@@ -1,0 +1,103 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="uk" class="page">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Форма Реєстрації</title>
+
+  <link rel="icon" type="image/x-icon" href= "{% static './img/ icon.ico' %}"/>
+  <link rel="stylesheet" href="{% static '/style.css' %}" /><script
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script><script
+
+    <script src="{% static '/style.css' %}"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body class="form__body">
+  <nav>
+    <div class="nav-bar">
+      <i class="bx bx-menu sidebarOpen"></i>
+      <span class="logo navLogo">
+        <a href="{% static '/index.html' %}">
+          <img
+            class="logo__img"
+            src= "{% static './img/logo.png' %}"
+            alt="Compassion & Wisdom in Ukraine"
+          />
+        </a>
+      </span>
+
+      <div class="menu">
+        <div class="logo-toggle">
+          <span class="logo"><a href="#"></a></span>
+          <i class="bx bx-x siderbarClose"></i>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="./">На головну</a></li>
+          <li><a href="#footer">Контакти</a></li>
+        </ul>
+      </div>
+
+      <a class="item__button" href="./form.html" style="visibility: hidden;">
+        <span class="item__buttonspan"> Реєстрація </span>
+      </a>
+    </div>
+  </nav>
+
+  <section class="form-section section-container" id="form">
+    <div class="section__quote">
+      <h1 class="margin-top">Форма для реєстрації</h1>
+      <span></span>
+    </div>
+
+    <div class="section__container">
+      <div class="section__container">
+      <form method="POST">
+  {% csrf_token %}
+  {{ form.as_p }}
+      <button type="submit" class="registerbtn" value="Submit">Pеєстрація</button>
+
+
+      </form>
+    </div>
+
+
+
+
+  <footer class="footer" id="footer">
+    <div class="legal">
+      <p>Copyright&copy; 2023 Compassion & Wisdom in Ukraine</p>
+
+      <ul class="social-icons">
+        <li class="social-icon">
+          <a target="_blank" class="website" href="https://www.compassionandwisdom.org/blog/2023/3/14/compassion-and-wisdom-in-ukraine-1-year-on">
+            <i class='bx bx-globe bx-sm'></i>
+          </a>
+        </li>
+
+        <li class="social-icon">
+          <a target="_blank" class="facebook" href="https://fb.me/e/17R0UUNzs">
+            <i class="bx bxl-facebook-circle bx-sm"></i>
+          </a>
+        </li>
+
+        <li class="social-icon">
+          <a target="_blank" class="telegram" href="https://t.me/+LSo0INqJHkhjNDcy?fbclid=IwAR0erq9PTM5CxzLaXb3Va5Ae62K7Kxl6WMpT_AfP4oUaLAvlV2W7qEDxIwI">
+            <i class='bx bxl-telegram bx-sm'></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+    <script src="{% static 'script.js' %}"></script>
+</body>
+
+</html>
